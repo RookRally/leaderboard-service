@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: leaderboard
+  description: |
+    The leaderboard service creates a ranking list from the opponents' results and makes it available.
+  links:
+    - title: Website
+      url: http://backstage.io
+    - title: How-Tos
+      url: https://backstage.io/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Slack Chat
+      url: https://discord.com/invite/EBHEGzX
+  annotations:
+    github.com/project-slug: RookRally/leaderboard-service
+    backstage.io/techdocs-ref: dir:.
+spec:
+  owner: sat-leaderboard-team
+  lifecycle: production
+  type: service
