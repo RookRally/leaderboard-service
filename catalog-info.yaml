@@ -20,3 +20,5 @@ spec:
   owner: sat-leaderboard-team
   lifecycle: production
   type: service
+  dependsOn:
+    - Component:registration
