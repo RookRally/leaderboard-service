@@ -22,6 +22,8 @@ spec:
   type: service
   dependsOn:
     - Component:registration
+  providesApis:
+    - leaderboard-rest-api
 
 ---
 apiVersion: backstage.io/v1alpha1
