@@ -22,3 +22,16 @@ spec:
   type: service
   dependsOn:
     - Component:registration
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: leaderboard-rest-api
+  description: REST API for the leaderboard
+spec:
+  type: openapi
+  owner: sat-leaderboard-team
+  lifecycle: production
+  definition:
+    $text: ./openapi.yaml
